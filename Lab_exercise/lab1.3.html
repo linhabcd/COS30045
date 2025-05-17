@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Data Visualisation Exercise 1" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Your name here" />
+
+    <title>Task 1.1 HTML and CSS Demo Page</title>
+    <!--Insert description of exercise  -->
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<nav>
+    <a href="HTML Starter Template.html">Home Page</a>
+    <a href="chart.html">View Pet Ownership Visualisations</a>
+</nav>
+
+<body>
+
+    <h1>Drawing Shapes with SVG</h1>
+    <svg width="500" height="60" style="background-color:slategrey;">
+        <g transform="translate(20,0)">
+            <circle cx="25" cy="30" r="25" fill="red" />
+            <rect x="50" y="5" width="50" height="50" fill="rgb(100,149,237)" />
+            <ellipse cx="140" cy="30" rx="40" ry="25" fill="pink" />
+            <line x1="0" y1="30" x2="180" y2="30" stroke="black" stroke-width="5" />
+        </g>
+    </svg>
+    <br>
+    <br>
+
+    <h2>2019 Pet Ownership Data</h2>
+    <div class="chart-container">
+        <svg width="700" height="400">
+            <!-- Chart background -->
+            <rect x="50" y="50" width="600" height="300" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+
+            <!-- Chart title -->
+            <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold">Pet Ownership in 2019</text>
+
+            <!-- Y-axis -->
+            <line x1="50" y1="50" x2="50" y2="350" stroke="#333" stroke-width="2" />
+
+            <!-- X-axis -->
+            <line x1="50" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2" />
+
+            <!-- Y-axis labels -->
+            <text x="45" y="350" text-anchor="end" class="axis-label">0</text>
+            <text x="45" y="300" text-anchor="end" class="axis-label">10</text>
+            <text x="45" y="250" text-anchor="end" class="axis-label">20</text>
+            <text x="45" y="200" text-anchor="end" class="axis-label">30</text>
+            <text x="45" y="150" text-anchor="end" class="axis-label">40</text>
+            <text x="45" y="100" text-anchor="end" class="axis-label">50</text>
+
+            <!-- Horizontal grid lines -->
+            <line x1="50" y1="300" x2="650" y2="300" stroke="#ddd" stroke-width="1" />
+            <line x1="50" y1="250" x2="650" y2="250" stroke="#ddd" stroke-width="1" />
+            <line x1="50" y1="200" x2="650" y2="200" stroke="#ddd" stroke-width="1" />
+            <line x1="50" y1="150" x2="650" y2="150" stroke="#ddd" stroke-width="1" />
+            <line x1="50" y1="100" x2="650" y2="100" stroke="#ddd" stroke-width="1" />
+
+            <!-- Y-axis title -->
+            <text x="20" y="200" text-anchor="middle" transform="rotate(270, 20, 200)" class="axis-label">Percentage
+                (%)</text>
+
+            <!-- Bars -->
+            <!-- Dogs: 40% -->
+            <rect x="80" y="150" width="60" height="200" fill="#4682B4" stroke="#333" stroke-width="1" />
+            <text x="110" y="365" class="bar-label">Dogs</text>
+            <text x="110" y="140" class="value-label">40%</text>
+
+            <!-- Cats: 27% -->
+            <rect x="160" y="230" width="60" height="120" fill="#FF6347" stroke="#333" stroke-width="1" />
+            <text x="190" y="365" class="bar-label">Cats</text>
+            <text x="190" y="220" class="value-label">27%</text>
+
+            <!-- Fish: 11% -->
+            <rect x="240" y="295" width="60" height="55" fill="#FFD700" stroke="#333" stroke-width="1" />
+            <text x="270" y="365" class="bar-label">Fish</text>
+            <text x="270" y="285" class="value-label">11%</text>
+
+            <!-- Birds: 9% -->
+            <rect x="320" y="305" width="60" height="45" fill="#9ACD32" stroke="#333" stroke-width="1" />
+            <text x="350" y="365" class="bar-label">Birds</text>
+            <text x="350" y="295" class="value-label">9%</text>
+
+            <!-- Small Mammals: 3% -->
+            <rect x="400" y="335" width="60" height="15" fill="#DA70D6" stroke="#333" stroke-width="1" />
+            <text x="430" y="365" class="bar-label">Small M</text>
+            <text x="430" y="325" class="value-label">3%</text>
+
+            <!-- Reptiles: 2% -->
+            <rect x="480" y="340" width="60" height="10" fill="#20B2AA" stroke="#333" stroke-width="1" />
+            <text x="510" y="365" class="bar-label">Reptiles</text>
+            <text x="510" y="330" class="value-label">2%</text>
+
+            <!-- Other Pets: 2% -->
+            <rect x="560" y="340" width="60" height="10" fill="#BA55D3" stroke="#333" stroke-width="1" />
+            <text x="590" y="365" class="bar-label">Other</text>
+            <text x="590" y="330" class="value-label">2%</text>
+        </svg>
+    </div>
+    <footer>
+        COS30045 Data Visualisation
+        <p>
+            Bui Nguyen Khanh Linh|
+            <a href="mailto:104226062@student.swin.edu.au">104226062@student.swin.edu.au</a>
+        </p>
+    </footer>
+</body>
+
+</html>
