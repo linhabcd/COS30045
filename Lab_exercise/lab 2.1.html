@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Paragraph Elements with D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <h1>Creating and Formatting Paragraph Elements with D3</h1>
+    <script>
+        var data = [14, 5, 26, 23, 9];
+
+        d3.select("body")
+            .selectAll("p")
+            .data(data)
+            .enter()
+            .append("p")
+            .text(d => {
+                if (d > 10) {
+                    return `Warning: Joe watched ${d} cat videos today.`;
+                } else {
+                    return `Joe watched ${d} cat videos today.`;
+                }
+            })
+            .style("color", d => d > 10 ? "red" : "black");
+    </script>
+    <p>New paragraph!</p>
+    <footer>
+        COS30045 Data Visualisation
+        <p>
+            Bui Nguyen Khanh Linh|
+            <a href="mailto:104226062@student.swin.edu.au">104226062@student.swin.edu.au</a>
+        </p>
+    </footer>
+</body>
+
+</html>
